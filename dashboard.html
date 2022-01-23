@@ -1,13 +1,44 @@
 <html>
     <head>
         <title> Dashboard </title>
-        <link rel="stylesheet" href="style.css">
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="dashboard.css">
         </head>
 
         <body>
-            <h1> Dashboard </h1>
-            <p> ndodncoceucubvub </p>
-            <script src="main.js"></script>
+            <center>
+                <hr>
+            <h1 style="color: whitesmoke;"> Dashboard
+                <button class="btn btn-danger" style="width:100px; margin-left:20px;height:40px;margin:0;" onclick="back()"> Back </button>  </h1>
+            <hr>
+            <br><br>
+            <div id="personal" class="btn btn-info">
+                <br>
+                <h2> About Me</h2>
+                <br><br>
+                <img src="user.jpg" id="user">
+                <br>
+                <h3 id="username"> Welcome User!</h3>
+                <br><br>
+                <label style="margin: 20px;"> "Even though I have a disability, I'm not incapable!" </label>
+            </div>
+            <div id="main" class="btn btn-info">
+                <h2> Interact with Me </h2>
+                <br><br>
+                <button id="profile_page" onclick="profile_page()" style="font-size: 25px;" class = "btn btn-success"> Visit Profile </button>
+                <br><br>
+                <button id="messaging" onclick="messaging()"style="font-size: 25px;" class="btn btn-primary"> Messaging</button>
+                <br><br>
+                <button id="job_search" onclick="job_search()" style="font-size: 25px; margin-bottom: 50px;"class="btn btn-warning"> Job Search </button>
+            </div>
+            </center>
+            <script src="dashboard.js"></script>
         </body>
 
 </html>

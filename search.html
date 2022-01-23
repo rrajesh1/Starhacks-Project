@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title> Job Search</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link ref="stylesheet" href="search.css">
+</head>
+<body style="background-color: rgb(47,177,211);">
+    <center>
+        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;"> Job Search 
+            <button class="btn btn-danger" style="width:100px; margin-left:20px;height:40px;margin:0;" onclick="back()"> Back </button>  </h1></h1>
+        <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:white;"> Find any job in the world, right now! </h3>
+        <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:white;"> Here are some other websites that will help you find a job! </h4>
+        <br><br>
+        <div id="left" style="float: left; margin-left: 500px;">
+        <button style="font-size: 30px; margin-bottom: 100px; width:230px; height: 100px;;"class="btn btn-primary"onclick="location.href='https://careers.kroll.com/'" type="button">
+            Website 1 </button>
+            <br>
+        <button style="font-size: 30px; margin-bottom: 100px; width: 230px; height: 100px;"class="btn btn-warning"onclick="location.href='https:www.info.com'" type="button">
+            Website 2 </button>
+                <br>
+        <button style="font-size: 30px; margin-bottom: 100px; width: 230px; height: 100px;" class="btn btn-success"onclick="location.href='https://indeed.com/'" type="button">
+                Website 3 </button>
+</div>
+<div id="right" style="float: right; margin-right: 500px;">
+    <button style="font-size: 30px; margin-bottom: 100px; width:230px; height: 100px;;"class="btn btn-warning"onclick="location.href='https://www.usa.gov/disability-jobs-education'" type="button">
+        Website 4 </button>
+        <br>
+    <button style="font-size: 30px; margin-bottom: 100px; width: 230px; height: 100px;"class="btn btn-success"onclick="location.href='https://abilityjobs.com/'" type="button">
+        Website 5 </button>
+            <br>
+    <button style="font-size: 30px; margin-bottom: 100px; width: 230px; height: 100px;" class="btn btn-primary"onclick="location.href='https://www2.illinois.gov/sites/work/Pages/Disabpgm.aspx'" type="button">
+            Website 6 </button>
+</div>
+    </center>
+    <script>
+        function back(){
+    window.location = "dashboard.html";
+}
+
+    </script>
+</body>
+<html>

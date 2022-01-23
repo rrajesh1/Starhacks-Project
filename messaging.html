@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="messaging.css">
+    
   </head>
   <body>
 
     <main>
         <header>
-          <h1>Messaging</h1>
+          <h1>Messaging
+            <button class="btn btn-danger" style="background-color:rgb(206, 40, 40);width:100px; margin-left:20px;height:40px;margin:0;" onclick="back()"> Back </button>  </h1>
+          </h1>
         </header>
       
         <section class="chat">
@@ -22,6 +25,9 @@
         </form>
 
         <script>
+            function back(){
+    window.location = "dashboard.html";
+}
             function send() {
                 message = document.getElementById('text').innerHTML
                 console.log(message)
