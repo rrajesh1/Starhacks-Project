@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Messaging</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="messaging.css">
+  </head>
+  <body>
+
+    <main>
+        <header>
+          <h1>Messaging</h1>
+        </header>
+      
+        <section class="chat">
+          <p><strong>Company</strong>: Hello user! Welcome to the chat feature! Here you can message specific companies and recruiters to discuss opportunities!</p>
+        </section>
+      
+        <form>
+          <input id='text' type="text" placeholder="Say something!" />
+          <button onclick="send()">Send</button>
+        </form>
+
+        <script>
+            function send() {
+                message = document.getElementById('text').innerHTML
+                console.log(message)
+                var p = document.createElement("p");
+                document.chat.appendChild(p);
+            }
+        </script>
+      </main>
+
+    <script src="messaging.js"></script>
+  </body>
+</html>
